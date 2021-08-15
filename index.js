@@ -34,4 +34,14 @@ BluetoothSerial.write = (data) => {
   return BluetoothSerial.writeToDevice(data.toString('base64'))
 }
 
+
+
+/**
+ * Read fron device
+ * @return {Promise<Buffer|String>}
+ */
+ BluetoothSerial.read = () => {
+  return BluetoothSerial.readFromDevice()
+}
+
 module.exports = BluetoothSerial
